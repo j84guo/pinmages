@@ -1,0 +1,5 @@
+GET             /              controllers.PinmagesController.index
+GET             /users/:name   controllers.PinmagesController.getUser(name: String)
+GET             /users         controllers.PinmagesController.getUsers()
+
+POST            /users/:name   controllers.PinmagesController.createUser(name: String)
