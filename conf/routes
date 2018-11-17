@@ -1,5 +1,10 @@
-GET             /              controllers.PinmagesController.index
-GET             /users/:name   controllers.PinmagesController.getUser(name: String)
-GET             /users         controllers.PinmagesController.getUsers()
+GET             /                   controllers.PgController.index
+GET             /users/:name        controllers.PgController.getUser(name: String)
+GET             /users              controllers.PgController.getAllUsers()
+GET             /images             controllers.PgController.getAllImages()
 
-POST            /users/:name   controllers.PinmagesController.createUser(name: String)
+POST            /users/:name        controllers.PgController.createUser(name: String)
+
+PUT             /images/:name       controllers.PgController.createImage(name: String)
+
+DELETE          /users/:name        controllers.PgController.deleteUser(name: String)

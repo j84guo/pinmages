@@ -31,12 +31,16 @@ and view others' pins.
     * returns a list of users
     * 200 ok
 
-* <i>POST /images/{user}</i>
+* <i>PUT /images/{user}</i>
     * returns info of newly created image
     * 201 created
 
 * <i>GET /images/{user}/{image}</i>
     * returns image info
+    * 200 ok
+
+* <i>GET /images</i>
+    * returns a list of images
     * 200 ok
 
 * <i>DELETE /images/{user}/{image}</i>
